@@ -16,17 +16,84 @@
         </nav>
     </header>
     
+    <h2>Submit Restaurant Review Request</h2>
     <form action="#" method="post">
         <div>
-            <label for="ContactUs">Contact Us</label><br>
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><br>
         </div>
+        
         <div>
-            <input type="text" placeholder="Enter Your Name" required><br>
-            <input type="email" placeholder="Enter Your Email" required><br>
-            <input type="tel" placeholder="Enter Your Phone Number" required><br>
-            <textarea id="ContactUs" name="ContactUs" rows="4" cols="50" placeholder="Enter your message"></textarea>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required><br><br>
         </div>
-        <input type="submit" value="submit">
+        
+        <div>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required><br><br>
+        </div>
+        
+        <div>
+            <label for="restaurant">Restaurant Name:</label><br>
+            <input type="text" id="restaurant" name="restaurant" placeholder="Enter Restaurant Name" required><br><br>
+        </div>
+        
+        <div>
+            <label for="location">Restaurant Location:</label><br>
+            <input type="text" id="location" name="location" placeholder="Enter Restaurant Location" required><br><br>
+        </div>
+        
+        <div>
+            <label>Restaurant Type:</label><br>
+            <input type="radio" id="ethiopian" name="restaurant_type" value="ethiopian">
+            <label for="ethiopian">Ethiopian</label><br>
+            
+            <input type="radio" id="international" name="restaurant_type" value="international">
+            <label for="international">International</label><br>
+            
+            <input type="radio" id="cafe" name="restaurant_type" value="cafe">
+            <label for="cafe">Cafe</label><br>
+            
+            <input type="radio" id="street_food" name="restaurant_type" value="street_food">
+            <label for="street_food">Street Food</label><br><br>
+        </div>
+        
+        <div>
+            <label for="price_range">Price Range:</label><br>
+            <select id="price_range" name="price_range" required>
+                <option value="">Select Price Range</option>
+                <option value="budget">Budget (Under 100 Birr)</option>
+                <option value="moderate">Moderate (100-300 Birr)</option>
+                <option value="expensive">Expensive (300+ Birr)</option>
+            </select><br><br>
+        </div>
+        
+        <div>
+            <label>Special Features (Select all that apply):</label><br>
+            <input type="checkbox" id="vegetarian" name="features" value="vegetarian">
+            <label for="vegetarian">Vegetarian Options</label><br>
+            
+            <input type="checkbox" id="wifi" name="features" value="wifi">
+            <label for="wifi">Free WiFi</label><br>
+            
+            <input type="checkbox" id="outdoor" name="features" value="outdoor">
+            <label for="outdoor">Outdoor Seating</label><br>
+            
+            <input type="checkbox" id="delivery" name="features" value="delivery">
+            <label for="delivery">Delivery Available</label><br><br>
+        </div>
+        
+        <div>
+            <label for="review_request">Review Request Details:</label><br>
+            <textarea id="review_request" name="review_request" rows="6" cols="50" placeholder="Tell us why you want this restaurant reviewed and any specific details..." required></textarea><br><br>
+        </div>
+        
+        <div>
+            <label for="message">Additional Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Any other information or comments..."></textarea><br><br>
+        </div>
+        
+        <input type="submit" value="Submit Review Request">
     </form>
     
     <footer>
